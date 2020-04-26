@@ -1,1 +1,1 @@
-vimrc.ps1 は管理者権限が必要です。
+executeMakeSymbolicLinks.ps1 を powershell で実行してください。
