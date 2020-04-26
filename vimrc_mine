@@ -1,0 +1,22 @@
+syntax enable
+
+set cindent
+set cino=>4
+" space 幾つを１つの tab とみなすか
+" tab １つの見た目を space 幾つ分にするか
+set tabstop=4
+" cindent や shift operator <<, >>, insert mode の
+" <C-D>, <C-T> での indent 時 space 幾つ分か
+set shiftwidth=4
+set encoding=utf-8
+"括弧入力時に対応する括弧を表示
+set showmatch
+set matchtime=3
+"swp file 無効化
+set noswapfile
+"undo file 無効化
+set noundofile
+"backup file 無効化
+set nobackup
+set number
+set title
