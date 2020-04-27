@@ -1,3 +1,39 @@
-source $HOME\vimrc_common
-
+" vsvim 特有↓
+"yank した text をそのまま clipboard へ
+set clipboard=unnamed
 inoremap <C-r>0 <C-r>+
+" vsvim 特有↑
+
+" 以下 vimrc_common
+" insert mode 時 back space で indent や改行を削除 
+set backspace=indent,eol,start
+"大文字/小文字の区別なく検索
+set ignorecase
+"検索文字列に大文字が含まれている場合は区別して検索
+set smartcase
+"矩形選択中は行末に text がなくても cursor を移動できる
+set virtualedit=block
+" incremental search
+set incsearch
+
+vnoremap <c-h> ^
+vnoremap <c-l> $
+nnoremap <c-h> ^
+nnoremap <c-l> $
+nnoremap <space>h 0
+
+nnoremap <CR> o<Esc>
+nnoremap Y y$
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk kj
+nnoremap x "_x
+nnoremap X "_X
+nnoremap Q <Nop>
+
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-h> <left>
+inoremap <C-l> <right>
+inoremap jj <Esc>
