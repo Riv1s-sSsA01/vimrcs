@@ -1,9 +1,10 @@
-" _vsvimrc だけ↓
-inoremap <C-r>0 <C-r>+
+" vsvim 特有↓
+"yank した text をそのまま clipboard へ
 set clipboard=unnamed
-" _vsvimrc だけ↑
+inoremap <C-r>0 <C-r>+
+" vsvim 特有↑
 
-" vimrc_common
+" 以下 vimrc_common
 " insert mode 時 back space で indent や改行を削除 
 set backspace=indent,eol,start
 "大文字/小文字の区別なく検索
