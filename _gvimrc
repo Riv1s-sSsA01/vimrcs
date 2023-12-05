@@ -2,6 +2,7 @@ let g:moloka_original = 1
 let g:rehash256 = 1
 colorscheme molokai
 
-set guifont=MyricaM_M:h18:cSHIFTJIS:qDRAFT
+set guifont=Cascadia\ Code:h18:cSHIFTJIS
+
 "yank した text をそのまま clipboard へ
 set clipboard=unnamed
